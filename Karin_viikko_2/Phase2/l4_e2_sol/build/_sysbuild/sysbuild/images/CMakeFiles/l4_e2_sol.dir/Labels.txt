@@ -1,0 +1,13 @@
+# Target labels
+ l4_e2_sol
+# Source files and their labels
+C:/Tietoliikenne_project/Phase2/l4_e2_sol/build/_sysbuild/sysbuild/images/CMakeFiles/l4_e2_sol
+C:/Tietoliikenne_project/Phase2/l4_e2_sol/build/_sysbuild/sysbuild/images/CMakeFiles/l4_e2_sol.rule
+C:/Tietoliikenne_project/Phase2/l4_e2_sol/build/_sysbuild/sysbuild/images/CMakeFiles/l4_e2_sol-complete.rule
+C:/Tietoliikenne_project/Phase2/l4_e2_sol/build/_sysbuild/sysbuild/images/l4_e2_sol-prefix/src/l4_e2_sol-stamp/l4_e2_sol-build.rule
+C:/Tietoliikenne_project/Phase2/l4_e2_sol/build/_sysbuild/sysbuild/images/l4_e2_sol-prefix/src/l4_e2_sol-stamp/l4_e2_sol-configure.rule
+C:/Tietoliikenne_project/Phase2/l4_e2_sol/build/_sysbuild/sysbuild/images/l4_e2_sol-prefix/src/l4_e2_sol-stamp/l4_e2_sol-download.rule
+C:/Tietoliikenne_project/Phase2/l4_e2_sol/build/_sysbuild/sysbuild/images/l4_e2_sol-prefix/src/l4_e2_sol-stamp/l4_e2_sol-install.rule
+C:/Tietoliikenne_project/Phase2/l4_e2_sol/build/_sysbuild/sysbuild/images/l4_e2_sol-prefix/src/l4_e2_sol-stamp/l4_e2_sol-mkdir.rule
+C:/Tietoliikenne_project/Phase2/l4_e2_sol/build/_sysbuild/sysbuild/images/l4_e2_sol-prefix/src/l4_e2_sol-stamp/l4_e2_sol-patch.rule
+C:/Tietoliikenne_project/Phase2/l4_e2_sol/build/_sysbuild/sysbuild/images/l4_e2_sol-prefix/src/l4_e2_sol-stamp/l4_e2_sol-update.rule
