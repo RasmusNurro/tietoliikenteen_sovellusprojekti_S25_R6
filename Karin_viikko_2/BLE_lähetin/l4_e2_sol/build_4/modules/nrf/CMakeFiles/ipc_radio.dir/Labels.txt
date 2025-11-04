@@ -1,0 +1,13 @@
+# Target labels
+ ipc_radio
+# Source files and their labels
+C:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol/build_4/modules/nrf/CMakeFiles/ipc_radio
+C:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol/build_4/modules/nrf/CMakeFiles/ipc_radio.rule
+C:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol/build_4/modules/nrf/CMakeFiles/ipc_radio-complete.rule
+C:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol/build_4/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-build.rule
+C:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol/build_4/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-configure.rule
+C:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol/build_4/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-download.rule
+C:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol/build_4/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-install.rule
+C:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol/build_4/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-mkdir.rule
+C:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol/build_4/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-patch.rule
+C:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol/build_4/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-update.rule
