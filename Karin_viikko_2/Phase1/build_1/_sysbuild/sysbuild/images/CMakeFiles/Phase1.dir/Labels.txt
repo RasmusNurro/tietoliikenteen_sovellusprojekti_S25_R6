@@ -1,0 +1,13 @@
+# Target labels
+ Phase1
+# Source files and their labels
+C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/CMakeFiles/Phase1
+C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/CMakeFiles/Phase1.rule
+C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/CMakeFiles/Phase1-complete.rule
+C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/Phase1-prefix/src/Phase1-stamp/Phase1-build.rule
+C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/Phase1-prefix/src/Phase1-stamp/Phase1-configure.rule
+C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/Phase1-prefix/src/Phase1-stamp/Phase1-download.rule
+C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/Phase1-prefix/src/Phase1-stamp/Phase1-install.rule
+C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/Phase1-prefix/src/Phase1-stamp/Phase1-mkdir.rule
+C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/Phase1-prefix/src/Phase1-stamp/Phase1-patch.rule
+C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/Phase1-prefix/src/Phase1-stamp/Phase1-update.rule

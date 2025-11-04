@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/CMakeFiles/Phase1"
+		},
+		{
+			"file" : "C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/CMakeFiles/Phase1.rule"
+		},
+		{
+			"file" : "C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/CMakeFiles/Phase1-complete.rule"
+		},
+		{
+			"file" : "C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/Phase1-prefix/src/Phase1-stamp/Phase1-build.rule"
+		},
+		{
+			"file" : "C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/Phase1-prefix/src/Phase1-stamp/Phase1-configure.rule"
+		},
+		{
+			"file" : "C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/Phase1-prefix/src/Phase1-stamp/Phase1-download.rule"
+		},
+		{
+			"file" : "C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/Phase1-prefix/src/Phase1-stamp/Phase1-install.rule"
+		},
+		{
+			"file" : "C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/Phase1-prefix/src/Phase1-stamp/Phase1-mkdir.rule"
+		},
+		{
+			"file" : "C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/Phase1-prefix/src/Phase1-stamp/Phase1-patch.rule"
+		},
+		{
+			"file" : "C:/Tietoliikenne_project/Phase1/build_1/_sysbuild/sysbuild/images/Phase1-prefix/src/Phase1-stamp/Phase1-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Phase1"
+		],
+		"name" : "Phase1"
+	}
+}

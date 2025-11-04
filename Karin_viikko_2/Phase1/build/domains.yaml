@@ -1,0 +1,7 @@
+default: Phase1
+build_dir: C:/Tietoliikenne_project/Phase1/build
+domains:
+  - name: Phase1
+    build_dir: C:/Tietoliikenne_project/Phase1/build/Phase1
+flash_order:
+  - Phase1
