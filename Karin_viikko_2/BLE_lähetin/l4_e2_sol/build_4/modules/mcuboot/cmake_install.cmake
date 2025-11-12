@@ -1,8 +1,8 @@
-# Install script for directory: C:/ncs/v3.1.1/bootloader/mcuboot/boot/zephyr/sysbuild
+# Install script for directory: C:/ncs/v3.1.1/nrf/modules/mcuboot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/sysbuild_toplevel")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Zephyr-Kernel")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,6 +29,16 @@ endif()
 
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
+  set(CMAKE_CROSSCOMPILING "TRUE")
+endif()
+
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "C:/ncs/toolchains/b8b84efebd/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-objdump.exe")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol/build_4/modules/mcuboot/boot/bootutil/zephyr/cmake_install.cmake")
 endif()
 

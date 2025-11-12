@@ -1,27 +1,59 @@
 cmake:
   application:
-    source-dir: 'C:/ncs/v3.1.1/zephyr/share/sysbuild'
+    configuration-dir: 'C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol'
+    source-dir: 'C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol'
   board:
     name: 'nrf5340dk'
     path:
      - 'C:/ncs/v3.1.1/zephyr/boards/nordic/nrf5340dk'
     qualifiers: 'nrf5340/cpuapp/ns'
     revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/ncs/v3.1.1/nrf/dts/bindings'
+     - 'C:/ncs/v3.1.1/zephyr/dts/bindings'
+    files:
+     - 'C:/ncs/v3.1.1/zephyr/boards/nordic/nrf5340dk/nrf5340dk_nrf5340_cpuapp_ns.dts'
+    include-dirs:
+     - 'C:/ncs/v3.1.1/nrf/include'
+     - 'C:/ncs/v3.1.1/nrf/dts/common'
+     - 'C:/ncs/v3.1.1/nrf/dts/riscv'
+     - 'C:/ncs/v3.1.1/nrf/dts/arm'
+     - 'C:/ncs/v3.1.1/nrf/dts'
+     - 'C:/ncs/v3.1.1/zephyr/include'
+     - 'C:/ncs/v3.1.1/zephyr/include/zephyr'
+     - 'C:/ncs/v3.1.1/zephyr/dts/common'
+     - 'C:/ncs/v3.1.1/zephyr/dts/vendor'
+     - 'C:/ncs/v3.1.1/zephyr/dts/rx'
+     - 'C:/ncs/v3.1.1/zephyr/dts/x86'
+     - 'C:/ncs/v3.1.1/zephyr/dts/xtensa'
+     - 'C:/ncs/v3.1.1/zephyr/dts/sparc'
+     - 'C:/ncs/v3.1.1/zephyr/dts/riscv'
+     - 'C:/ncs/v3.1.1/zephyr/dts/posix'
+     - 'C:/ncs/v3.1.1/zephyr/dts/arm64'
+     - 'C:/ncs/v3.1.1/zephyr/dts/arm'
+     - 'C:/ncs/v3.1.1/zephyr/dts/arc'
+     - 'C:/ncs/v3.1.1/zephyr/dts'
   images:
-   - name: 'l4_e2_sol'
-     source-dir: 'C:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol'
-     type: 'MAIN'
-   - name: 'ipc_radio'
-     source-dir: ''
+   - name: 'tfm'
+     source-dir: 'C:/ncs/v3.1.1/modules/tee/tf-m/trusted-firmware-m'
   kconfig:
     files:
-     - 'C:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol/build_4/_sysbuild/empty.conf'
-     - 'C:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol/build_4/_sysbuild/empty.conf'
+     - 'C:/ncs/v3.1.1/zephyr/boards/nordic/nrf5340dk/nrf5340dk_nrf5340_cpuapp_ns_defconfig'
+     - 'C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol/prj.conf'
     user-files:
-     - 'C:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol/build_4/_sysbuild/empty.conf'
-  sysbuild: 'true'
+     - 'C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/ncs/toolchains/b8b84efebd/opt/zephyr-sdk'
+  vendor-specific:
+    nordic:
+      svdfile: 'C:/ncs/v3.1.1/modules/hal/nordic/nrfx/mdk/nrf5340_application.svd'
+  zephyr:
+    version: '4.1.99'
+    zephyr-base: 'C:/ncs/v3.1.1/zephyr'
 version: '0.1.0'
 west:
-  command: 'C:\ncs\toolchains\b8b84efebd\opt\bin\Scripts\west build --build-dir c:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol/build_4 c:/Tietoliikenne_project/Phase3/phase2/l4_e2_sol --pristine --board nrf5340dk/nrf5340/cpuapp/ns -- -DCONF_FILE=prj.conf -DDTC_OVERLAY_FILE=boards/nrf52840dongle_nrf52840.overlay'
+  command: 'C:\ncs\toolchains\b8b84efebd\opt\bin\Scripts\west build --build-dir c:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol/build_4 c:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol --pristine --board nrf5340dk/nrf5340/cpuapp/ns --no-sysbuild --'
   topdir: 'c:\ncs\v3.1.1'
   version: '1.4.0'
