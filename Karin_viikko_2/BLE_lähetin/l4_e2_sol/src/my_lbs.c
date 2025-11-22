@@ -143,7 +143,7 @@ int my_lbs_send_button_state_indicate(bool button_state)
 }
 
 /* STEP 14 - Define the function to send notifications for the MYSENSOR characteristic */
-int my_lbs_send_sensor_notify(uint16_t sensor_value1, uint16_t sensor_value2, uint16_t sensor_value3)
+int my_lbs_send_sensor_notify(uint16_t sensor_value1, uint16_t sensor_value2, uint16_t sensor_value3, uint16_t suunta)
 {
     if (!notify_mysensor_enabled) {
         return -EACCES;
@@ -153,11 +153,13 @@ int my_lbs_send_sensor_notify(uint16_t sensor_value1, uint16_t sensor_value2, ui
         uint16_t sensor1;	
         uint16_t sensor2;
         uint16_t sensor3;
+		uint16_t suunta; // Suunta parametri lisätty payloadiin
     } sensor_data;
 
     sensor_data.sensor1 = sensor_value1;
     sensor_data.sensor2 = sensor_value2;
     sensor_data.sensor3 = sensor_value3;
+	sensor_data.suunta = suunta; // Suunta arvo asetettu rakenteeseen
 
     return bt_gatt_notify(NULL, &my_lbs_svc.attrs[7],
                           &sensor_data, sizeof(sensor_data));

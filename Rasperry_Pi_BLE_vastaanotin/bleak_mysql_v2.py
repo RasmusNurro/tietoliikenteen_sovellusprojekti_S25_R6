@@ -7,19 +7,19 @@ from bleak import BleakClient
 ADDRESS = "EC:6B:86:29:EE:5A"
 CHARACTERISTIC_UUID = "00001526-1212-EFDE-1523-785FEABCD123"
 
-DB_HOST = os.getenv("DB_HOST", "172.20.241.21")
-DB_USER = os.getenv("DB_USER", "dbaccess_rw")
-DB_PASS = os.getenv("DB_PASS", "jokusalasana123")
-DB_NAME = os.getenv("DB_NAME", "measurements")
+DB_HOST = os.getenv("DB_HOST")
+DB_USER = os.getenv("DB_USER")
+DB_PASS = os.getenv("DB_PASS")
+DB_NAME = os.getenv("DB_NAME")
 
 async def handle_notification(sender, data, pool):
-    values = struct.unpack('<HHH', data)
+    values = struct.unpack('<HHHH', data)
     print(f"Ilmoitus {sender}: {values}")
     async with pool.acquire() as conn:
         async with conn.cursor() as cur:
             try:
                 await cur.execute(
-                    "INSERT INTO rawdata (sensorvalue_a, sensorvalue_b, sensorvalue_c) VALUES (%s,%s,%s)",
+                    "INSERT INTO rawdata (sensorvalue_a, sensorvalue_b, sensorvalue_c, suunta) VALUES (%s,%s,%s,%s)",
                     values
                 )
                 await conn.commit()

@@ -103,7 +103,7 @@ int my_lbs_send_button_state_notify(bool button_state);
  * @retval 0 If the operation was successful.
  *           Otherwise, a (negative) error code is returned.
  */
-int my_lbs_send_sensor_notify(uint16_t sensor_value1, uint16_t sensor_value2, uint16_t sensor_value3);
+int my_lbs_send_sensor_notify(uint16_t sensor_value1, uint16_t sensor_value2, uint16_t sensor_value3, uint16_t suunta); // suunta on uusi
 
 #ifdef __cplusplus
 }

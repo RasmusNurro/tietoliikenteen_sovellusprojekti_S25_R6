@@ -15,11 +15,13 @@
 #include "my_lbs.h"
 #include "adc.h"
 
+uint16_t nappi_suunta = 0; // tämä on uusi, kertoo napin tilan
+
 static const struct bt_le_adv_param *adv_param = BT_LE_ADV_PARAM(
 	(BT_LE_ADV_OPT_CONN |
 	 BT_LE_ADV_OPT_USE_IDENTITY), /* Connectable advertising and use identity address */
-	800, /* Min Advertising Interval 500ms (800*0.625ms) */
-	801, /* Max Advertising Interval 500.625ms (801*0.625ms) */
+	1600, /* Min Advertising Interval 1000ms (1600*0.625ms) */
+	1601, /* Max Advertising Interval 1000.625ms (1601*0.625ms) */
 	NULL); /* Set to NULL for undirected advertising */
 
 LOG_MODULE_REGISTER(Lesson4_Exercise2, LOG_LEVEL_INF);
@@ -37,7 +39,7 @@ LOG_MODULE_REGISTER(Lesson4_Exercise2, LOG_LEVEL_INF);
 
 #define RUN_LED_BLINK_INTERVAL 1000
 /* STEP 17 - Define the interval at which you want to send data at */
-#define NOTIFY_INTERVAL 500
+#define NOTIFY_INTERVAL 1000
 static bool app_button_state;
 static struct k_work adv_work;
 /* STEP 15 - Define the data you want to stream over Bluetooth LE */
@@ -99,7 +101,7 @@ void send_data_thread(void)
         struct Measurement m = readADCValue();
 
         /* Lähetä ilmoitus vain jos asiakas on tilannut */
-        my_lbs_send_sensor_notify(m.x, m.y, m.z);
+        my_lbs_send_sensor_notify(m.x, m.y, m.z, nappi_suunta); // suunta parametri lisätty xyz arvojen jälkeen
 
         k_sleep(K_MSEC(NOTIFY_INTERVAL));
     }
@@ -112,7 +114,12 @@ static struct my_lbs_cb app_callbacks = {
 
 static void button_changed(uint32_t button_state, uint32_t has_changed)
 {
-	if (has_changed & USER_BUTTON) {
+	if (button_state & USER_BUTTON) { // tässä napin painallus aiheuttaa incrementin suunta-muuttujaan
+		nappi_suunta++;
+		 if (nappi_suunta > 5)
+		 {
+			 nappi_suunta = 0;
+		 }
 		uint32_t user_button_state = button_state & USER_BUTTON;
 		/* STEP 6 - Send indication on a button press */
 		my_lbs_send_button_state_indicate(user_button_state);
@@ -169,9 +176,9 @@ int main(void)
 		return 0;
 		}
 
-		// luetaan data adc funktiolla ja vittu
+		// luetaan data adc funktiolla
 		struct Measurement m = readADCValue();
-		printk("x = %d,  y = %d,  z = %d\n", m.x, m.y, m.z);
+		printk("x = %d,  y = %d,  z = %d, suunta = %d\n", m.x, m.y, m.z, nappi_suunta);
 	
 
 	err = dk_leds_init();
