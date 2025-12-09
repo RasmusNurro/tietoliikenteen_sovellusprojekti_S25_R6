@@ -7,7 +7,7 @@ Lyhykäisyydessään koko projektin ideana on se, että saadaan siirrettyä antu
 
 # Rasperry Pi:n valmistelu
 Projekti aloitettiin valmistelemalla rasperry pi käyttöä varten. Siirsimme .img tiedoston muistikortille ja muistikortti asetettiin rasperryyn. Näin saimme asennettua käyttöjärjestelmän. Teimme myös tarvittavat konfiguroinnit SSH yhteyttä varten. Kytkimme ethernet kaapelilla rasperryn verkkoon, jonka jälkeen pääsemme SSH protokollaa käyttäen laitteeseen käsiksi omalta tietokoneelta. Näin pystymme asentamaan projektissa tarvittavia ohjelmia ja hallinnoimaan laitetta.
-<img width="1000" height="667" alt="Rasperry-tietokone_v2" src="https://github.com/user-attachments/assets/f14bbafb-eedf-4aeb-b41a-440816133515" />
+<img width="300" height="167" alt="Rasperry-tietokone_v2" src="https://github.com/user-attachments/assets/f14bbafb-eedf-4aeb-b41a-440816133515" />
 
 
 # Mikrokontrolleri
