@@ -12,9 +12,12 @@ Projekti aloitettiin valmistelemalla rasperry pi käyttöä varten. Siirsimme .i
 
 
 # Mikrokontrolleri
-Olennainen osa projektia on mikrokontrolleri, joka mittaa anturidataa ja lähettää Bluetooth LE:tä käyttäen. Projektissa käyttämämme mikrokontrolleri on Nordic Semiconductorin valmistama nRF5340. Mikrokontrolleri sopii projektiin täydellisesti sisäänrakennetun Bluetooth tuen takia ja pienen virrankulutuksensa vuoksi. Voidaksemme ohjelmoida kyseistä laitetta, täytyi meidän asentaa Visual Studio Code-sovellukseen tarvittavat lisäosat, kuten nRF Connect for VSCode sekä nRF Devicetree. Lisäksi tietokoneelle piti asentaa Segger J-Link ohjelma, joka mahdollistaa mikrokontrollerin ohjelmoinnin USB-sarjaportin kautta. Flashasimme mikrokontrollerille pari ohjelmaa opettajan tunnilla ja muokkasimme valmista Bluetooth LE koodia meidän käyttöömme sopivaksi.
+Olennainen osa projektia on mikrokontrolleri, joka mittaa anturidataa ja lähettää Bluetooth LE:tä käyttäen. Projektissa käyttämämme mikrokontrolleri on Nordic Semiconductorin valmistama nRF5340dk. Mikrokontrolleri sopii projektiin täydellisesti sisäänrakennetun Bluetooth tuen takia ja pienen virrankulutuksensa vuoksi. Voidaksemme ohjelmoida kyseistä laitetta, täytyi meidän asentaa Visual Studio Code-sovellukseen tarvittavat lisäosat, kuten nRF Connect for VSCode, nRF Devicetree sekä tarvittavat sdk ja . Lisäksi tietokoneelle piti asentaa Segger J-Link ohjelma, joka mahdollistaa mikrokontrollerin ohjelmoinnin USB-sarjaportin kautta. Flashasimme mikrokontrollerille pari ohjelmaa opettajan tunnilla ja muokkasimme valmista Bluetooth LE koodia meidän käyttöömme sopivaksi.
 
 <img width="476" height="236" alt="mikrokontrolleri_v2" src="https://github.com/user-attachments/assets/4627b3cb-311a-4697-843b-92ba2d168e01" />
 
 
-# MySql
+# Tietokanta palvelimella
+Tietokantamme sijaitsee Ubuntun virtuaalipalvelimella. Palvelimelle asensimme MySQL ohjelmiston ja loimme tietokannan. Sen jälkeen varmistimme pääsyn palvelimelle laitteille, jotka sitä tarvitsevat, kuten Rasperry Pi. Se vaati pienen määrän palomuuri konffausta, mutta sen kanssa ei ollut ongelmaa. Loimme käyttäjät MySQL ohjelmistoon, joilla on riittävät oikeudet rasperrylle tietokantaan datan lisäämiseksi. Julkaisimme myös Apache/PHP nettisivun, jolta datan näkee verkkosivulla.
+
+<img width="425" height="231" alt="Näyttökuva 2025-12-09 131930" src="https://github.com/user-attachments/assets/c3df15e7-3986-4842-93b0-2c567da8f0a7" />
