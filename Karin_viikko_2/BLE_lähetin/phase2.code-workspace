@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"nrf-connect.applications": [
+			"${workspaceFolder}\\l4_e2_sol"
+		],
+		"files.associations": {
+			"gap.h": "c",
+			"log.h": "c",
+			"conn.h": "c"
+		}
+	}
+}

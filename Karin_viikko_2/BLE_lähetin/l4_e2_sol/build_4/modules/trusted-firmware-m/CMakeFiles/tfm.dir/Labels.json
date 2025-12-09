@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol/build_4/modules/trusted-firmware-m/CMakeFiles/tfm"
+		},
+		{
+			"file" : "C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol/build_4/modules/trusted-firmware-m/CMakeFiles/tfm.rule"
+		},
+		{
+			"file" : "C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol/build_4/modules/trusted-firmware-m/CMakeFiles/tfm-complete.rule"
+		},
+		{
+			"file" : "C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol/build_4/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-build.rule"
+		},
+		{
+			"file" : "C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol/build_4/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-configure.rule"
+		},
+		{
+			"file" : "C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol/build_4/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-download.rule"
+		},
+		{
+			"file" : "C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol/build_4/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-install.rule"
+		},
+		{
+			"file" : "C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol/build_4/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol/build_4/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-patch.rule"
+		},
+		{
+			"file" : "C:/Users/seppo/Documents/GitHub/tietoliikenteen_sovellusprojekti_S25_R6/Karin_viikko_2/BLE_lähetin/l4_e2_sol/build_4/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"tfm"
+		],
+		"name" : "tfm"
+	}
+}

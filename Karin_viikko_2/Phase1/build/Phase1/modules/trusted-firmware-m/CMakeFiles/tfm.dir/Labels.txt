@@ -1,0 +1,13 @@
+# Target labels
+ tfm
+# Source files and their labels
+C:/Tietoliikenne_project/Phase1/build/Phase1/modules/trusted-firmware-m/CMakeFiles/tfm
+C:/Tietoliikenne_project/Phase1/build/Phase1/modules/trusted-firmware-m/CMakeFiles/tfm.rule
+C:/Tietoliikenne_project/Phase1/build/Phase1/modules/trusted-firmware-m/CMakeFiles/tfm-complete.rule
+C:/Tietoliikenne_project/Phase1/build/Phase1/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-build.rule
+C:/Tietoliikenne_project/Phase1/build/Phase1/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-configure.rule
+C:/Tietoliikenne_project/Phase1/build/Phase1/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-download.rule
+C:/Tietoliikenne_project/Phase1/build/Phase1/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-install.rule
+C:/Tietoliikenne_project/Phase1/build/Phase1/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-mkdir.rule
+C:/Tietoliikenne_project/Phase1/build/Phase1/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-patch.rule
+C:/Tietoliikenne_project/Phase1/build/Phase1/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-update.rule

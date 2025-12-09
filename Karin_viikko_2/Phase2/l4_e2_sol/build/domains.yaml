@@ -1,0 +1,10 @@
+default: l4_e2_sol
+build_dir: C:/Tietoliikenne_project/Phase2/l4_e2_sol/build
+domains:
+  - name: l4_e2_sol
+    build_dir: C:/Tietoliikenne_project/Phase2/l4_e2_sol/build/l4_e2_sol
+  - name: ipc_radio
+    build_dir: C:/Tietoliikenne_project/Phase2/l4_e2_sol/build/ipc_radio
+flash_order:
+  - ipc_radio
+  - l4_e2_sol
