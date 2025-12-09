@@ -18,6 +18,6 @@ Olennainen osa projektia on mikrokontrolleri, joka mittaa anturidataa ja lähett
 
 
 # Tietokanta palvelimella
-Tietokantamme sijaitsee Ubuntun virtuaalipalvelimella. Palvelimelle asensimme MySQL ohjelmiston ja loimme tietokannan. Sen jälkeen varmistimme pääsyn palvelimelle laitteille, jotka sitä tarvitsevat, kuten Rasperry Pi. Se vaati pienen määrän palomuuri konffausta, mutta sen kanssa ei ollut ongelmaa. Loimme käyttäjät MySQL ohjelmistoon, joilla on riittävät oikeudet rasperrylle tietokantaan datan lisäämiseksi. Julkaisimme myös Apache/PHP nettisivun, jolta datan näkee verkkosivulla.
+Tietokantamme sijaitsee Ubuntun virtuaalipalvelimella. Palvelimelle asensimme MySQL ohjelmiston ja loimme tietokannan. Sen jälkeen varmistimme pääsyn palvelimelle laitteille, jotka sitä tarvitsevat, kuten Rasperry Pi. Se vaati pienen määrän palomuuri konffausta, mutta sen kanssa ei ollut ongelmaa. Loimme käyttäjät MySQL ohjelmistoon, joilla on riittävät oikeudet tietokantaan datan lisäämiseksi ja hakemiseksi. Näitä käyttäjiä tarvitsi Rasperry Pi sekä tietokoneen python ohjelma, jolla data haettiin K-means algoritmia varten. Julkaisimme myös Apache/PHP nettisivun, jolta datan näkee verkkosivulla.
 
 <img width="425" height="231" alt="Näyttökuva 2025-12-09 131930" src="https://github.com/user-attachments/assets/c3df15e7-3986-4842-93b0-2c567da8f0a7" />
