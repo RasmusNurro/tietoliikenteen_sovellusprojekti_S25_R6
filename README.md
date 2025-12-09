@@ -8,7 +8,8 @@ Lyhykäisyydessään koko projektin ideana on se, että saadaan siirrettyä antu
 # Rasperry Pi:n valmistelu
 Projekti aloitettiin valmistelemalla rasperry pi käyttöä varten. Siirsimme .img tiedoston muistikortille ja muistikortti asetettiin rasperryyn. Näin saimme asennettua käyttöjärjestelmän. Teimme myös tarvittavat konfiguroinnit SSH yhteyttä varten. Kytkimme ethernet kaapelilla rasperryn verkkoon, jonka jälkeen pääsemme SSH protokollaa käyttäen laitteeseen käsiksi omalta tietokoneelta. Näin pystymme asentamaan projektissa tarvittavia ohjelmia ja hallinnoimaan laitetta.
 
-<img width="300" height="167" alt="Rasperry-tietokone_v2" src="https://github.com/user-attachments/assets/f14bbafb-eedf-4aeb-b41a-440816133515" />
+<img width="500" height="334" alt="Rasperry-tietokone_v3" src="https://github.com/user-attachments/assets/b4f02e45-41a4-4a82-8972-79ed45fcb3ed" />
+
 
 # Mikrokontrolleri
 Olennainen osa projektia on mikrokontrolleri, joka mittaa anturidataa ja lähettää Bluetooth LE:tä käyttäen. Projektissa käyttämämme mikrokontrolleri on Nordic Semiconductorin valmistama nRF5340. Mikrokontrolleri sopii projektiin täydellisesti sisäänrakennetun Bluetooth tuen takia ja pienen virrankulutuksensa vuoksi. Voidaksemme ohjelmoida kyseistä laitetta, täytyi meidän asentaa Visual Studio Code-sovellukseen tarvittavat lisäosat, kuten nRF Connect for VSCode sekä nRF Devicetree. Lisäksi tietokoneelle piti asentaa Segger J-Link ohjelma, joka mahdollistaa mikrokontrollerin ohjelmoinnin USB-sarjaportin kautta. Flashasimme mikrokontrollerille pari ohjelmaa opettajan tunnilla ja muokkasimme valmista Bluetooth LE koodia meidän käyttöömme sopivaksi.
