@@ -8,6 +8,7 @@ Tietoliikenteen sovellusprojekti ala Rasmus & Severi
 - [Mikrokontrolleri](#Mikrokontrolleri)
 - [Tietokanta palvelimella](#Tietokanta-palvelimella)
 - [K-means ja Confusion Matrix](#K-means-ja-Confusion-Matrix)
+- [Loppukommentit](#Loppukommentit)
 
 # Lähtökohta
 Lyhykäisyydessään koko projektin ideana on se, että saadaan siirrettyä anturidataa mikrokontrollerilta MySql tietokantaan ja sillä datalla koulutetaan koneoppimismalli. Mikrokontrollerin ja tietokannan välissä on Rasperry Pi-tietokone, joka vastaanottaa anturidatan mikrokontrollerilta käyttäen langatonta tiedonsiirto protokollaa nimeltä Bluetooth Low Energy. Bluetooth Low Energy on IoT(Esineiden Internet) laitteille hyvin soveltuva protokolla, sillä se ei vaadi paljoa resursseja ja kuluttaa vähän virtaa. Rasperry Pi on yhdistettynä ethernet kaapelilla kytkimeen ja sitä kautta koulun sisäiseen tietoverkkoon. Sitä tietoverkkoa käyttäen se pystyy siirtämään dataa Ubuntu serverille, jossa tietokanta sijaitsee. Lopuksi koulutetaan koneoppimismalli datalla, joka antureista saadaan. Projekti tehdään pareittain, mutta kuusi paria muodostaa yhden scrum ryhmän. Scrum ryhmä kokoontuu kerran viikossa ja käy läpi kaikkien projektin etenemisen ja ongelmatilanteet.
@@ -44,4 +45,14 @@ Teimme pienen python koodipätkän, jolla saimme haettua tietokannasta MySQL kys
 Confusion matrixille annetaan suunta cp1-cp6 ja korreloiva suunta tulostuu ruudulle, jos suunta on oikea. Kuvassa mennään vuorotellen cp1 -> cp6 eli x oikeinpäin, x väärinpäin, y oikeinpäin, y väärinpäin yms. Eli kuvassa joka kohdassa confusion matrix ennustaa oikean suunnan centroidien perusteella.
 
 <img width="316" height="181" alt="Näyttökuva 2025-12-09 092549" src="https://github.com/user-attachments/assets/a3d60b2c-03a8-4d0e-a895-ff50eb4f8bfa" />
+
+# Loppukommentit
+## Severi 
+Joo, oli todella mukavaa värkkäystä erilaisten laitteiden kanssa. Eniten pidin mikrokontrollerin kanssa värkkäilystä sekä ssh yhteydellä palvelimen kanssa kommunikoimisesta. K-means algoritmi oli myös todella kiinnostava.
+
+## Rasmus
+Oli mieluisaa työskennellä Severinkaa. Muutamassa kohdassa oli vaikea selvittää mistä alottaa, mutta ku sai selville niin pallo lähti hyvin kierimään. Olisi ollut vielä mieluisampaa mikäli olisi kaikkea enemmän integroitu keskenään.
+
+### Lopuksi kuva Rasperry Pi-kasasta :)
+![IMG_2263](https://github.com/user-attachments/assets/37cd2466-e8d0-4cd0-b7f4-9bdcef191387)
 
