@@ -33,7 +33,7 @@ Käytetty mikrokontrolleri.
 Tietokantamme sijaitsee Ubuntun virtuaalipalvelimella. Palvelimelle asensimme MySQL ohjelmiston ja loimme tietokannan. Sen jälkeen varmistimme pääsyn palvelimelle laitteille, jotka sitä tarvitsevat, kuten Rasperry Pi. Se vaati pienen määrän palomuuri konffausta, mutta sen kanssa ei ollut ongelmaa. Loimme käyttäjät MySQL ohjelmistoon, joilla on riittävät oikeudet tietokantaan datan lisäämiseksi ja hakemiseksi. Näitä käyttäjiä tarvitsi Rasperry Pi sekä tietokoneen python ohjelma, jolla data haettiin K-means algoritmia varten. Julkaisimme myös Apache/PHP nettisivun, jolta datan näkee verkkosivulla.
 
 <img width="425" height="231" alt="Näyttökuva 2025-12-09 131930" src="https://github.com/user-attachments/assets/c3df15e7-3986-4842-93b0-2c567da8f0a7" />
-<img width="1920" height="711" alt="Screenshot 2025-12-10 at 13-36-53 404 - Ei löytynyt" src="https://github.com/user-attachments/assets/126c60fd-ffe5-43c2-bf9b-e4752dfae2b0" />
+<img width="1012" height="499" alt="Screenshot 2025-12-10 at 13-36-53 404 - Ei löytynyt" src="https://github.com/user-attachments/assets/5c6ca175-97f4-4c90-8351-0c6fa76a48c3" />
 Verkkosivun 404-virhe. 
 
 # K-means ja Confusion Matrix
