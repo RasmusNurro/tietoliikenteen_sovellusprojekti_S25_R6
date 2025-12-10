@@ -4,10 +4,10 @@ Tietoliikenteen sovellusprojekti ala Rasmus & Severi
 
 # Sisällysluettelo
 - [Lähtökohta](#Lähtökohta)
-- [Rasperry Pi:n valmistelu](#Rasperry)
+- [Rasperry Pi:n valmistelu](#Rasperry_Pi:n_valmistelu)
 - [Mikrokontrolleri](#Mikrokontrolleri)
-- [Tietokanta palvelimella](#Tietokanta)
-- [K-means ja Confusion Matrix](#K-means)
+- [Tietokanta palvelimella](#Tietokanta_palvelimella)
+- [K-means ja Confusion Matrix](#K-means_ja_Confusion_matrix)
 
 # Lähtökohta
 Lyhykäisyydessään koko projektin ideana on se, että saadaan siirrettyä anturidataa mikrokontrollerilta MySql tietokantaan ja sillä datalla koulutetaan koneoppimismalli. Mikrokontrollerin ja tietokannan välissä on Rasperry Pi-tietokone, joka vastaanottaa anturidatan mikrokontrollerilta käyttäen langatonta tiedonsiirto protokollaa nimeltä Bluetooth Low Energy. Bluetooth Low Energy on IoT(Esineiden Internet) laitteille hyvin soveltuva protokolla, sillä se ei vaadi paljoa resursseja ja kuluttaa vähän virtaa. Rasperry Pi on yhdistettynä ethernet kaapelilla kytkimeen ja sitä kautta koulun sisäiseen tietoverkkoon. Sitä tietoverkkoa käyttäen se pystyy siirtämään dataa Ubuntu serverille, jossa tietokanta sijaitsee. Lopuksi koulutetaan koneoppimismalli datalla, joka antureista saadaan. Projekti tehdään pareittain, mutta kuusi paria muodostaa yhden scrum ryhmän. Scrum ryhmä kokoontuu kerran viikossa ja käy läpi kaikkien projektin etenemisen ja ongelmatilanteet.
